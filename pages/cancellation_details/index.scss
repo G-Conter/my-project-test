@@ -1,0 +1,77 @@
+@charset "UTF-8";
+.jdc {}
+
+.page {
+	position: relative;
+	width: 750rpx;
+	height: 1330rpx;
+	background: #FFFFFF;
+	.header-box{
+		display: flex;
+		width: 700rpx;
+		height: 76rpx;
+		margin-top: 54rpx;
+		margin-left: 30rpx;
+		align-items: center;
+		.avatar-img {
+			width: 76rpx;
+			height: 76rpx;
+			border-radius: 50%;
+			background-color: red;
+		}
+		.user-name {
+			font-family: PingFangSC, PingFang SC;
+			font-weight: 600;
+			font-size: 28rpx;
+			color: #333333;
+			line-height: 76rpx;
+			margin-left: 16rpx;
+			text-align: left;
+			font-style: normal;
+		}
+	}
+	.contents-box {
+		width: 690rpx;
+		height: 952rpx;
+		margin-left: 30rpx;
+	}
+	.cancellation-button-box {
+		position: fixed;
+		display: flex;
+		width: 690rpx;
+		height: 208rpx;
+		margin-left: 30rpx;
+		bottom: 0;
+		flex-direction: column;
+		align-items: center;
+		.cancellation-remind {
+			font-family: PingFangSC, PingFang SC;
+			font-weight: 400;
+			font-size: 24rpx;
+			color: #999999;
+			line-height: 34rpx;
+			margin-top: 24rpx;
+			text-align: left;
+			font-style: normal;
+		}
+		.cancellation-button {
+			display: flex;
+			width: 690rpx;
+			height: 90rpx;
+			background: #E93323;
+			border-radius: 45rpx;
+			margin-top: 24rpx;
+			justify-content: center;
+			align-items: center;
+			.cancellation-button-text {
+				font-family: PingFangSC, PingFang SC;
+				font-weight: 400;
+				font-size: 32rpx;
+				color: #FFFFFF;
+				line-height: 44rpx;
+				text-align: left;
+				font-style: normal;
+			}
+		}
+	}
+}

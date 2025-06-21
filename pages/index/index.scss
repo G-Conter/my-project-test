@@ -1,3 +1,6 @@
+@charset "UTF-8";
+.jdc {}
+
 .page {
 	display: flex;
 	width: 750rpx;
@@ -6,7 +9,7 @@
 	flex-direction: column;
 	align-items: center;
 }
-.login-background{
+.login-background {
 	position: absolute;
 	z-index: 1;
 	object-fit: cover;
@@ -15,7 +18,7 @@
 	left: -2rpx;
 	top: 0;
 }
-.log-box{
+.log-box {
 	z-index: 2;
 	display: flex;
 	width: 638rpx;
@@ -24,14 +27,14 @@
 	flex-direction: column;
 	align-items: center;
 }
-.logo{
+.logo {
 	position: absolute;
 	width: 160rpx;
 	height: 160rpx;
 	border: 4rpx solid #FFFFFF;
 	border-radius: 50%;
 }
-.login-box{
+.login-box {
 	display: flex;
 	width: 638rpx;
 	height: 760rpx;
@@ -42,7 +45,7 @@
 	flex-direction: column;
 	align-items: center;
 }
-.login-text-box{
+.login-text-box {
 	display: flex;
 	width: 638rpx;
 	height: 68rpx;
@@ -50,14 +53,14 @@
 	justify-content: center;
 	align-items: center;
 }
-.account-login-box{
+.account-login-box {
 	display: flex;
 	flex-direction: column;
 	width: 144rpx;
 	height: 68rpx;
 	align-items: center;
 }
-.rapid-login-box{
+.rapid-login-box {
 	display: flex;
 	flex-direction: column;
 	width: 144rpx;
@@ -66,7 +69,7 @@
 	margin-left: 124rpx;
 	
 }
-.login-text-box-text{
+.login-text-box-text {
 	width: 128rpx;
 	height: 44rpx;
 	font-family: PingFangSC, PingFang SC;
@@ -77,7 +80,7 @@
 	text-align: center;
 	font-style: normal;
 }
-/* .rapid-login-box > .login-text-box-text{
+/* .rapid-login-box > .login-text-box-text {
 	width: 128rpx;
 	height: 44rpx;
 	font-family: PingFangSC, PingFang SC;
@@ -88,7 +91,7 @@
 	text-align: center;
 	font-style: normal;
 } */
-.login-text-active{
+.login-text-active {
 	width: 144rpx;
 	height: 50rpx;
 	font-family: PingFangSC, PingFang SC;
@@ -99,7 +102,7 @@
 	text-align: center;
 	font-style: normal;
 }
-.active{
+.active {
 	width: 80rpx;
 	height: 6rpx;
 	background: linear-gradient( 135deg, #FF7931 0%, #E93323 100%);
@@ -109,29 +112,35 @@
 .rapid-login-box > .selected-item{
 	display: none;
 }
-.phone-box{
+.phone-box {
 	display: flex;
 	width: 524rpx;
 	margin-top: 76rpx;
 	align-items: center;
 }
-.phone-icon{
+.phone-icon {
 	width: 40rpx;
 	height: 40rpx;
 	line-height:40rpx;
+	font-size: 28rpx;
+	text-align: center;
+	color: #CCCCCC;
 }
-.password-box{
+.password-box {
 	display: flex;
 	width: 524rpx;
 	margin-top: 40rpx;
 	align-items: center;
 }
-.password-icon{
+.password-icon {
 	width: 40rpx;
 	height: 40rpx;
+	font-size: 28rpx;
 	line-height:40rpx;
+	text-align: center;
+	color: #CCCCCC;
 }
-.phone-number{
+.phone-number {
 	height: 40rpx;
 	font-family: PingFangSC, PingFang SC;
 	font-weight: 400;
@@ -141,7 +150,7 @@
 	text-align: left;
 	font-style: normal;
 }
-.phone-placeholder{
+.phone-placeholder {
 /* 	width: 168rpx; */
 	height: 40rpx;
 	font-family: PingFangSC, PingFang SC;
@@ -152,7 +161,7 @@
 	text-align: left;
 	font-style: normal;
 }
-.password-number{
+.password-number {
 	height: 40rpx;
 	font-family: PingFangSC, PingFang SC;
 	font-weight: 400;
@@ -162,7 +171,7 @@
 	text-align: left;
 	font-style: normal;
 }
-.password-placeholder{
+.password-placeholder {
 /* 	width: 168rpx; */
 	height: 40rpx;
 	font-family: PingFangSC, PingFang SC;
@@ -173,14 +182,14 @@
 	text-align: left;
 	font-style: normal;
 }
-hr{
+hr {
 	width: 520rpx;
 	border: 1rpx solid #EEEEEE;
 	margin-top: 40rpx;
 }
 
 
-.forget-password-text{
+.forget-password-text {
 	width: 120rpx;
 	height: 34rpx;
 	font-family: PingFangSC, PingFang SC;
@@ -193,7 +202,7 @@ hr{
 	margin-left: 404rpx;
 	margin-top: 16rpx;
 }
-.login-btn{
+.login-btn {
 	width: 520rpx;
 	height: 86rpx;
 	background: linear-gradient( 90deg, #FF7931 0%, #E93323 100%);
@@ -203,16 +212,17 @@ hr{
 	font-weight: 500;
 	font-size: 30rpx;
 	color: #FFFFFF;
+	line-height:86rpx;
 	font-style: normal;
 }
-.remarks-box{
+.remarks-box {
 	display: flex;
 	width: 508rpx;
 	height: 32rpx;
 	margin-top: 40rpx;
 	align-items: center;
 }
-.remarks-text:nth-child(2){
+.remarks-text:nth-child(2) {
 	margin-left: 12rpx;
 }
 .agree-radio {
@@ -240,7 +250,7 @@ hr{
 	border: 4rpx solid #fff;
 	border-width: 0 4rpx 4rpx 0;
 }
-.remarks-text{
+.remarks-text {
 	/* width: 464rpx; */
 	height: 24rpx;
 	font-family: PingFangSC, PingFang SC;
@@ -251,7 +261,7 @@ hr{
 	text-align: left;
 	font-style: normal;
 }
-.remarks-agreement{
+.remarks-agreement {
 	color: #E93323;
 }
 

@@ -3,31 +3,48 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app",
-				"navigationStyle":"custom"
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/personal_information/index",
+			"style": {
+				"navigationBarTitleText": "个人资料",
+				"navigationStyle": "custom"
 			}
 		},
 		{
 			"path": "pages/forget/forget",
 			"style": {
-				"navigationBarTitleText": "uni-app",
-				"navigationStyle":"custom"
+				"navigationBarTitleText": "忘记密码",
+				"navigationStyle": "custom"
 			}
 		},
 		{
 			"path": "pages/agreement/agreement",
 			"style": {
-				"navigationBarTitleText": "uni-app",
-				"navigationStyle":"custom"
+				"navigationBarTitleText": "用户协议",
+				"navigationStyle": "custom"
 			}
 		},
 		{
 			"path": "pages/privacy/privacy",
 			"style": {
-				"navigationBarTitleText": "uni-app",
-				"navigationStyle":"custom"
+				"navigationBarTitleText": "隐私协议",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path" : "pages/cancellation_details/index",
+			"style" : 
+			{
+				"navigationBarTitleText": "注销详情",
+				"navigationStyle": "custom"
 			}
 		}
+
+
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
