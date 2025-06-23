@@ -15,8 +15,11 @@
 <style>
 	/*每个页面公共css */
 	@import url("./static/iconfont/iconfont.css");
-	uni-page-body,html,body{  
+	uni-page-body,html,body {  
 	    height: 100%;
+	}
+	.uni-body {
+		height: 100%;
 	}
 </style>
 

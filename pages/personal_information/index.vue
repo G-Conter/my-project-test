@@ -12,7 +12,7 @@
 						@click="editImage()">
 						<image
 							class="avatar-img"
-							src="" 
+							:src="avatarUrl" 
 							mode="">
 						</image>
 						<image 
@@ -75,51 +75,41 @@
 </template>
 
 <script>
+	import request from '../../utils/request.js';
 	export default {
 		data() {
 			return {
-				name: '名字',
-				idNumber: 177333,
-				
+				name: '',
+				idNumber: '',
+				avatarUrl: '',
 			}
 		},
 		onLoad() {
-			console.log("进入页面")
-			uni.request({
-				url: 'https://bz.wuht.net/api/user',
-				method: 'GET',
-				data: {
-				},
-				header: {
-					'content-type': 'application/json',
-					//#ifdef H5
-					'Form-type': navigator.userAgent.toLowerCase().indexOf("micromessenger") !== -1 ?
-						'wechat' : 'h5',
-					//#endif
-					//#ifdef MP
-					'Form-type': 'routine',
-					//#endif
-					//#ifdef APP-VUE
-					'Form-type': 'app',
-					//#endif
-				},
-				success: (res) => {
-					if (res.statusCode !== 200 && res.statusCode !== 201) {
-						return uni.showToast({
-							title: '请求失败',
-							icon: 'error',
-						})
-					} else {
-						console.log(res.data);
+			console.log("进入个人资料页面")
+			try {
+				const tokenValue = uni.getStorageSync('token');
+				if (tokenValue) {
+					const data = {
+						'token': tokenValue,
 					}
-				},
-				fail: (err) => {
-					return uni.showToast({
-						title: '请求失败',
-						icon: 'error',
+					// console.log(request.get('user', data, {noAuth: true, noVerify: false})) 
+					const cast = request.get('user', data, {noAuth: true, noVerify: false});
+					cast.then((res) => {
+						const resData = res.data;
+						console.log(resData);
+						this.name = resData.real_name;
+						this.idNumber = resData.agent_id;
+						this.avatarUrl = resData.avatar;
 					})
 				}
-			})
+				
+			} catch (e) {
+				// error
+			}
+			// data = {
+			// 	'token': tokenValue,
+			// }
+			
 		},
 		methods: {
 			editImage(){
